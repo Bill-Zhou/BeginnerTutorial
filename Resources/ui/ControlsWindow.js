@@ -5,7 +5,9 @@ function ControlsWindow () {
 		title:'Controls'
 	});
 	
-	var tableView = Ti.UI.createTableView();
+	var tableView = Ti.UI.createTableView({
+		style:Ti.UI.iPhone.TableViewStyle.GROUPED
+	});
 
 	var data = [{title:'Slider', hasChild:true, test:'ui/controls/slider'}];
 	
